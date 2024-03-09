@@ -3,7 +3,7 @@ html
     include common/head.pug
     +head(title)
   body
-    .relative.bg-white.overflow-hidden
+    .relative.bg-white.overflow-visible
       include common/landing-navbar.pug
       +landing-navbar()
       main.mt-8.mx-auto.max-w-screen-xl.px-4.sm_mt-12.sm_px-6.md_mt-20.xl_mt-24
@@ -29,7 +29,7 @@ html
                 a.font-medium.text-gray-900.underline(href='#') Privacy Policy
                 | .
           .mt-12.relative.sm_max-w-lg.sm_mx-auto.lg_mt-0.lg_max-w-none.lg_mx-0.lg_col-span-6.lg_flex.lg_items-center
-            img.w-full(src=asset("images/diagram.jpg"))
+            video(preload="none" autoplay playsinline="true" src="https://video.wixstatic.com/video/1c2711_2b9d829c11f4482eb23b5b6df6b00bd9/1080p/mp4/file.mp4")
             //-svg.absolute.top-0.left-1.transform.-translate-x-1.-translate-y-8.scale-75.origin-top.sm_scale-100.lg_hidden(width='640', height='784', fill='none', viewBox='0 0 640 784')
               defs 
                 pattern#4f4f415c-a0e9-44c2-9601-6ded5a34a13e(x='118', y='0', width='20', height='20', patternUnits='userSpaceOnUse')
